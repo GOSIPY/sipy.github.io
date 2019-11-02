@@ -674,13 +674,14 @@
   context.beginPath()
   context.moveTo(0,100);
   context.lineTo(l,100);
+		  context.strokeStyle = "blue";
   
   context.moveTo(0,100);
   for(var i=0;i<200;i+=1){
   var x = i*5;
   
   var y=z*(Math.cosh(B*x)-Math.cos(B*x))+Math.sinh(B*x)-Math.sin(B*x);
-  context.lineTo(x,10*y+100);
+  context.lineTo(x,20*y+100);
   }
   context.stroke();
   context.closePath();
@@ -739,13 +740,14 @@
   context.beginPath()
   context.moveTo(0,100);
   context.lineTo(l,100);
+		  context.strokeStyle = "blue";
   
   context.moveTo(0,100);
   for(var i=0;i<200;i+=1){
   var x = i*5;
   
   var y=z*(Math.cosh(B*x)-Math.cos(B*x))+Math.sinh(B*x)-Math.sin(B*x);
-  context.lineTo(x,10*y+100);
+  context.lineTo(x,20*y+100);
   }
   context.stroke();
   context.closePath();
@@ -803,13 +805,14 @@
   context.beginPath()
   context.moveTo(0,100);
   context.lineTo(l,100);
+		  context.strokeStyle = "blue";
   
   context.moveTo(0,100);
   for(var i=0;i<200;i+=1){
   var x = i*5;
   var y1 = Math.sin(x);
   var y=z*(Math.cosh(B*x)+Math.cos(B*x))+Math.sinh(B*x)+Math.sin(B*x);
-  context.lineTo(x,10*y+100);
+  context.lineTo(x,20*y+100);
   }
   context.stroke();
   context.closePath();
